@@ -1,0 +1,10 @@
+<h2>Two day data binding</h2>
+
+<form>
+    <input type="text" [(ngModel)]="name2" name="name" placeholder="Digite seu nome">
+    <input type="submit" value="Enviar">
+</form>
+
+<div *ngIf="name2 !== ''">
+    <p>O nome é {{ name2 }}</p>
+</div>
